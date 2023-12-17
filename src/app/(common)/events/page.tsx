@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 };
 export default function Events() {
   return (
-    <section className="flex flex-col flex-1">
+    <section className="flex flex-col flex-1 ">
       <Banner {...dataPageEvents.banner} />
-      <Wrapper className="flex-grow lg:flex">
+      <Wrapper className="flex-grow lg:flex flex-1  ">
         <NoResource name={dataPageEvents.key} />
       </Wrapper>
     </section>

@@ -6,7 +6,7 @@ type Props = {
 
 const NoResource = (props: Props) => {
   return (
-    <div className="flex flex-row bg-white w-full items-center">
+    <div className="flex flex-row  w-full items-center  mt-28 ">
       <p className="text-md">
         There are currently no {props.name} to display, please check again
         later.
