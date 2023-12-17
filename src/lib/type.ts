@@ -36,6 +36,8 @@ export interface IconLinkType {
 export interface BannerType {
   imgUrl: string;
   title?: string;
+  urlBack?: '/channel-partners';
+  backTitle?: 'channel-partners';
 }
 
 export interface PageAppType {
@@ -44,7 +46,7 @@ export interface PageAppType {
   key: string;
   footerBox?: footerBox;
   boxSideToSide?: boxSideToSide;
-  listCard?: objectCard;
+  listCard?: objectCard | any;
   listBox?: BoxPartnerType2[];
 }
 
@@ -84,4 +86,18 @@ export interface counterType {
   name: string;
   count: number;
   end?: string;
+}
+
+export interface FormType {
+  type: string;
+  name: string;
+  label: string;
+  required: boolean;
+  colspan: number;
+  data?: FormTypeData[];
+}
+
+export interface FormTypeData {
+  value: string;
+  label: string;
 }

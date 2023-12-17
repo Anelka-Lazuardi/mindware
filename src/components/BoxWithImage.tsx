@@ -31,6 +31,7 @@ const BoxWithImage = (props: Props) => {
               src={box.url}
               fill
               alt={box.label}
+              sizes="100%"
               className="object-cover object-top hover:scale-125 duration-500 ease-in-out transition-all cursor-pointer"
             />
           </div>

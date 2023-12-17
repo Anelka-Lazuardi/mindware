@@ -374,14 +374,6 @@ export const dataPagePromotions: PageAppType = {
   key: 'promotions',
 };
 
-export const dataPageContactUs: PageAppType = {
-  banner: {
-    imgUrl: 'https://www.mindware.net/ContentFiles/15BannerImage.jpg',
-    title: 'Contact Us',
-  },
-  key: 'contact Us',
-};
-
 export const dataPageSolutions: PageAppType = {
   banner: {
     imgUrl: 'https://www.mindware.net/ContentFiles/7BannerImage.jpg',
@@ -920,5 +912,810 @@ export const countAbout: counterType[] = [
     name: 'across 12 Warehouses',
     count: 90000,
     end: 'sqft',
+  },
+];
+
+export const formContactUs: any = [
+  {
+    type: 'text',
+    name: 'first_name',
+    label: 'First Name',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'last_name',
+    label: 'Last Name',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'email',
+    label: 'Email Address',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'country',
+    name: 'country',
+    label: 'Country',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'number',
+    name: 'phone',
+    label: 'Phone Number',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'company',
+    label: 'Company Name',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'select',
+    name: 'inquiry',
+    label: 'Inquiry Type',
+    required: true,
+    colspan: 1,
+    data: [
+      {
+        label: 'Finance',
+        value: 'Finance',
+      },
+      {
+        label: 'HR',
+        value: 'HR',
+      },
+      {
+        label: 'Logistics',
+        value: 'Logistics',
+      },
+      {
+        label: 'Request a Demo',
+        value: 'Request a Demo',
+      },
+      {
+        label: 'Sales',
+        value: 'Sales',
+      },
+      {
+        label: 'Start your Project',
+        value: 'Start your Project',
+      },
+      {
+        label: 'Become a Cloud Partner',
+        value: 'Become a Cloud Partner',
+      },
+    ],
+  },
+  {
+    type: 'select',
+    name: 'solution',
+    label: 'Which Solution Are You Interested In?',
+    required: true,
+    colspan: 1,
+    data: [
+      {
+        label: 'Acer',
+        value: 'Acer',
+      },
+      {
+        label: 'Acronis',
+        value: 'Acronis',
+      },
+      {
+        label: 'Archer',
+        value: 'Archer',
+      },
+      {
+        label: 'Arcserve',
+        value: 'Arcserve',
+      },
+      {
+        label: 'Azure',
+        value: 'Azure',
+      },
+      {
+        label: 'Barracuda',
+        value: 'Barracuda',
+      },
+      {
+        label: 'Black Box',
+        value: 'Black Box',
+      },
+      {
+        label: 'BROADCOM',
+        value: 'BROADCOM',
+      },
+      {
+        label: 'Censornet',
+        value: 'Censornet',
+      },
+      {
+        label: 'Cibecs',
+        value: 'Cibecs',
+      },
+      {
+        label: 'Citrix',
+        value: 'Citrix',
+      },
+      {
+        label: 'Cloudflare',
+        value: 'Cloudflare',
+      },
+      {
+        label: 'Dell',
+        value: 'Dell',
+      },
+      {
+        label: 'EATON',
+        value: 'EATON',
+      },
+      {
+        label: 'EC - Council',
+        value: 'EC - Council',
+      },
+      {
+        label: 'Entrust',
+        value: 'Entrust',
+      },
+      {
+        label: 'ESET',
+        value: 'ESET',
+      },
+      {
+        label: 'Forcepoint',
+        value: 'Forcepoint',
+      },
+      {
+        label: 'Google Nest',
+        value: 'Google Nest',
+      },
+      {
+        label: 'HTC Vive',
+        value: 'HTC Vive',
+      },
+      {
+        label: 'Huawei',
+        value: 'Huawei',
+      },
+      {
+        label: 'Inferrix',
+        value: 'Inferrix',
+      },
+      {
+        label: 'Ivanti',
+        value: 'Ivanti',
+      },
+      {
+        label: 'Juniper',
+        value: 'Juniper',
+      },
+      {
+        label: 'Keysight Technologies',
+        value: 'Keysight Technologies',
+      },
+      {
+        label: 'Kodak Alaris',
+        value: 'Kodak Alaris',
+      },
+      {
+        label: 'Lenovo',
+        value: 'Lenovo',
+      },
+      {
+        label: 'M365',
+        value: 'M365',
+      },
+      {
+        label: 'Microsoft',
+        value: 'Microsoft',
+      },
+      {
+        label: 'Mitel',
+        value: 'Mitel',
+      },
+      {
+        label: 'NETWITNESS',
+        value: 'NETWITNESS',
+      },
+      {
+        label: 'Nexans',
+        value: 'Nexans',
+      },
+      {
+        label: 'One Identity',
+        value: 'One Identity',
+      },
+      {
+        label: 'Oracle',
+        value: 'Oracle',
+      },
+      {
+        label: 'OUTSEER - An RSA Company',
+        value: 'OUTSEER - An RSA Company',
+      },
+      {
+        label: 'PNY',
+        value: 'PNY',
+      },
+      {
+        label: 'Quest',
+        value: 'Quest',
+      },
+      {
+        label: 'R&M',
+        value: 'R&M',
+      },
+      {
+        label: 'Riverbed',
+        value: 'Riverbed',
+      },
+      {
+        label: 'Rubrik',
+        value: 'Rubrik',
+      },
+      {
+        label: 'SecurID',
+        value: 'SecurID',
+      },
+      {
+        label: 'Software AG',
+        value: 'Software AG',
+      },
+      {
+        label: 'spiderSilk',
+        value: 'spiderSilk',
+      },
+      {
+        label: 'TP LINK',
+        value: 'TP LINK',
+      },
+      {
+        label: 'Trellix',
+        value: 'Trellix',
+      },
+      {
+        label: 'Trend Micro',
+        value: 'Trend Micro',
+      },
+      {
+        label: 'Ubiquiti',
+        value: 'Ubiquiti',
+      },
+      {
+        label: 'Vade',
+        value: 'Vade',
+      },
+      {
+        label: 'Veritas',
+        value: 'Veritas',
+      },
+      {
+        label: 'Vertiv',
+        value: 'Vertiv',
+      },
+      {
+        label: 'Xerox',
+        value: 'Xerox',
+      },
+    ],
+  },
+  {
+    type: 'textarea',
+    name: 'message',
+    label: 'Message',
+    required: true,
+    colspan: 2,
+  },
+];
+
+export const dataPageContactUs: PageAppType = {
+  banner: {
+    imgUrl: 'https://www.mindware.net/ContentFiles/15BannerImage.jpg',
+    title: 'Contact Us',
+  },
+  key: 'contact Us',
+  listCard: {
+    title: 'Contact Details',
+    data: [
+      {
+        label: 'Head Office - United Arab Emirates',
+        urlImage: 'https://www.mindware.net/ContentFiles/48Image.jpg',
+        location: {
+          name: 'Mindware FZ LLC',
+          address:
+            '10th Floor, Cayan Business Center,Barsha Heights, office 1001',
+        },
+        additional: [
+          { key: 'PO BOX', value: '55609, Dubai, United Arab Emirates' },
+          { key: 'Tel', value: '+971 4 4500 600' },
+          { key: '', value: 'sales@mindware.net' },
+        ],
+      },
+      {
+        label: 'Algeria',
+
+        urlImage: 'https://www.mindware.net/ContentFiles/269Image.jpg',
+        location: {
+          name: 'Southcomp Distribution SARL',
+          address: 'KOUBA, Coopérative Les IRIS, Villa 02',
+        },
+      },
+      {
+        label: 'Côte d’Ivoire',
+        urlImage: 'https://www.mindware.net/ContentFiles/268Image.jpg',
+        location: {
+          name: 'Polaris Distribution SARL',
+          address:
+            'Abidjan, 17 Rue des Ferronniers Lot 70, zone 3, Treichville',
+        },
+        additional: [
+          { key: 'Tel', value: '21751947' },
+          { key: 'Fax', value: '21254817' },
+        ],
+      },
+      {
+        label: 'Kingdom of Saudi Arabia',
+        urlImage: 'https://www.mindware.net/ContentFiles/49Image.jpg',
+        location: {
+          name: 'Aklaniat Technologies LTD',
+          address: 'Alrabwah, Fatimah Alzahra Street,Bldg. 6601',
+        },
+        additional: [
+          { key: 'PO BOX', value: '10586, Riyadh 11334, KSA' },
+          { key: 'Tel', value: '+966 1 215 3126' },
+          { key: 'Fax', value: '+966 1 215 3127' },
+          { key: '', value: 'ksa_sales@mindware.net' },
+        ],
+      },
+      {
+        label: 'Kuwait',
+        urlImage: 'https://www.mindware.net/ContentFiles/50Image.jpg',
+        location: {
+          name: 'Mindware Computer Service Company',
+          address:
+            'Dar Al Awadi Tower, Mall Area, 2nd floor, Of. 5119, Entrance 51, Ahmed Al Jaber Street, Kuwait City, Kuwait',
+        },
+        additional: [
+          { key: 'Tel', value: '+965 2 232 2927' },
+          { key: 'Fax', value: '+965 2 232 2993' },
+          { key: '', value: 'kuwait_sales@mindware.net' },
+        ],
+      },
+      {
+        label: 'Lebanon',
+        urlImage: 'https://www.mindware.net/ContentFiles/51Image.jpg',
+        location: {
+          name: 'Mindware SAL',
+          address: 'Corniche Al Nahr,Holcom Bldg., 4th Floor,Beirut, Lebanon',
+        },
+        additional: [
+          { key: 'PO BOX', value: '55609, Dubai, United Arab Emirates' },
+          { key: 'Tel', value: '+961 1 440 752' },
+          { key: '', value: 'Leb_sales@mindware.net' },
+        ],
+      },
+
+      {
+        label: 'Morocco',
+        urlImage: 'https://www.mindware.net/ContentFiles/270Image.jpg',
+        location: {
+          name: 'Southcomp Distribution MAROC',
+          address: ' Casablanca',
+        },
+      },
+      {
+        label: 'Pakistan',
+        urlImage: 'https://www.mindware.net/ContentFiles/52Image.jpg',
+        location: {
+          name: '',
+          address:
+            'Emirates Tower, M-13, Of. 314,F-7 Markaz, Islamabad, Pakistan',
+        },
+        additional: [
+          { key: 'Tel', value: '+92 51 209 9189' },
+          { key: 'Fax', value: '+92 51 209 9112' },
+          { key: '', value: 'Pak_sales@mindware.net' },
+        ],
+      },
+      {
+        label: 'Tunisie',
+        urlImage: 'https://www.mindware.net/ContentFiles/271Image.jpg',
+        location: {
+          name: 'Southcomp Distribution Tunisie',
+          address:
+            'Tunisie, Imm. Crystal Palace – Bur 2.B.2/2.B.3, Les Berges du Lac - Tunis',
+        },
+      },
+      {
+        label: 'Regional Contacts',
+        urlImage: 'https://www.mindware.net/images/office6.jpg',
+
+        additional: [
+          { key: 'Bahrain:', value: 'Bahrain_Sales@mindware.net' },
+          { key: 'Egypt:', value: 'Egypt_Sales@mindware.net' },
+          { key: 'Iraq:', value: 'Iraq_Sales@mindware.net' },
+          { key: 'Jordan:', value: 'Jordan_Sales@mindware.net' },
+          { key: 'Oman:', value: 'Oman_Sales@mindware.net' },
+          { key: 'Qatar:', value: 'qatar@mindware.net' },
+        ],
+      },
+    ],
+  },
+};
+
+export const dataPageBecomePartners: PageAppType = {
+  banner: {
+    imgUrl: 'https://www.mindware.net/ContentFiles/15BannerImage.jpg',
+    title: 'Become a Partner',
+    urlBack: '/channel-partners',
+    backTitle: 'channel-partners',
+  },
+  key: 'Become a Partner',
+};
+
+export const formBecomePartners: any = [
+  {
+    type: 'header',
+    label: 'Personal Details',
+  },
+  {
+    type: 'text',
+    name: 'first_name',
+    label: 'First Name',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'last_name',
+    label: 'Last Name',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'job_title',
+    label: 'Job Title',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'hr',
+    label: 'hr1',
+  },
+
+  {
+    type: 'header',
+    label: 'Company Details',
+  },
+
+  {
+    type: 'text',
+    name: 'company',
+    label: 'Company Name',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'street_address',
+    label: 'Street Address',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'street_address_line',
+    label: 'Street Address Line 2',
+    required: false,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'city',
+    label: 'City',
+    required: true,
+    colspan: 1,
+  },
+
+  {
+    type: 'text',
+    name: 'state_provice',
+    label: 'State / Province',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'po_box',
+    label: 'PO BOX',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'country',
+    name: 'country',
+    label: 'Country',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'vat',
+    label: 'VAT Or Registration Number',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'email',
+    label: 'Email Address',
+    required: true,
+    colspan: 1,
+  },
+
+  {
+    type: 'number',
+    name: 'phone',
+    label: 'Phone Number',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'text',
+    name: 'website',
+    label: 'Website',
+    required: true,
+    colspan: 1,
+  },
+  {
+    type: 'textarea',
+    name: 'message',
+    label: 'Your Company Currently Sells',
+    required: true,
+    colspan: 2,
+  },
+  {
+    type: 'select',
+    name: 'hear_from',
+    label: 'How Did You Hear About Us?',
+    required: true,
+    colspan: 1,
+    data: [
+      {
+        label: 'Media',
+        value: 'Media',
+      },
+      {
+        label: 'Referral',
+        value: 'Referral',
+      },
+      {
+        label: 'Social Media',
+        value: 'Social Media',
+      },
+    ],
+  },
+  {
+    type: 'select',
+    name: 'solution',
+    label: 'Which Solution Are You Interested In?',
+    required: true,
+    colspan: 1,
+    data: [
+      {
+        label: 'Acer',
+        value: 'Acer',
+      },
+      {
+        label: 'Acronis',
+        value: 'Acronis',
+      },
+      {
+        label: 'Archer',
+        value: 'Archer',
+      },
+      {
+        label: 'Arcserve',
+        value: 'Arcserve',
+      },
+      {
+        label: 'Azure',
+        value: 'Azure',
+      },
+      {
+        label: 'Barracuda',
+        value: 'Barracuda',
+      },
+      {
+        label: 'Black Box',
+        value: 'Black Box',
+      },
+      {
+        label: 'BROADCOM',
+        value: 'BROADCOM',
+      },
+      {
+        label: 'Censornet',
+        value: 'Censornet',
+      },
+      {
+        label: 'Cibecs',
+        value: 'Cibecs',
+      },
+      {
+        label: 'Citrix',
+        value: 'Citrix',
+      },
+      {
+        label: 'Cloudflare',
+        value: 'Cloudflare',
+      },
+      {
+        label: 'Dell',
+        value: 'Dell',
+      },
+      {
+        label: 'EATON',
+        value: 'EATON',
+      },
+      {
+        label: 'EC - Council',
+        value: 'EC - Council',
+      },
+      {
+        label: 'Entrust',
+        value: 'Entrust',
+      },
+      {
+        label: 'ESET',
+        value: 'ESET',
+      },
+      {
+        label: 'Forcepoint',
+        value: 'Forcepoint',
+      },
+      {
+        label: 'Google Nest',
+        value: 'Google Nest',
+      },
+      {
+        label: 'HTC Vive',
+        value: 'HTC Vive',
+      },
+      {
+        label: 'Huawei',
+        value: 'Huawei',
+      },
+      {
+        label: 'Inferrix',
+        value: 'Inferrix',
+      },
+      {
+        label: 'Ivanti',
+        value: 'Ivanti',
+      },
+      {
+        label: 'Juniper',
+        value: 'Juniper',
+      },
+      {
+        label: 'Keysight Technologies',
+        value: 'Keysight Technologies',
+      },
+      {
+        label: 'Kodak Alaris',
+        value: 'Kodak Alaris',
+      },
+      {
+        label: 'Lenovo',
+        value: 'Lenovo',
+      },
+      {
+        label: 'M365',
+        value: 'M365',
+      },
+      {
+        label: 'Microsoft',
+        value: 'Microsoft',
+      },
+      {
+        label: 'Mitel',
+        value: 'Mitel',
+      },
+      {
+        label: 'NETWITNESS',
+        value: 'NETWITNESS',
+      },
+      {
+        label: 'Nexans',
+        value: 'Nexans',
+      },
+      {
+        label: 'One Identity',
+        value: 'One Identity',
+      },
+      {
+        label: 'Oracle',
+        value: 'Oracle',
+      },
+      {
+        label: 'OUTSEER - An RSA Company',
+        value: 'OUTSEER - An RSA Company',
+      },
+      {
+        label: 'PNY',
+        value: 'PNY',
+      },
+      {
+        label: 'Quest',
+        value: 'Quest',
+      },
+      {
+        label: 'R&M',
+        value: 'R&M',
+      },
+      {
+        label: 'Riverbed',
+        value: 'Riverbed',
+      },
+      {
+        label: 'Rubrik',
+        value: 'Rubrik',
+      },
+      {
+        label: 'SecurID',
+        value: 'SecurID',
+      },
+      {
+        label: 'Software AG',
+        value: 'Software AG',
+      },
+      {
+        label: 'spiderSilk',
+        value: 'spiderSilk',
+      },
+      {
+        label: 'TP LINK',
+        value: 'TP LINK',
+      },
+      {
+        label: 'Trellix',
+        value: 'Trellix',
+      },
+      {
+        label: 'Trend Micro',
+        value: 'Trend Micro',
+      },
+      {
+        label: 'Ubiquiti',
+        value: 'Ubiquiti',
+      },
+      {
+        label: 'Vade',
+        value: 'Vade',
+      },
+      {
+        label: 'Veritas',
+        value: 'Veritas',
+      },
+      {
+        label: 'Vertiv',
+        value: 'Vertiv',
+      },
+      {
+        label: 'Xerox',
+        value: 'Xerox',
+      },
+    ],
   },
 ];
